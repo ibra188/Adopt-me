@@ -1,12 +1,15 @@
 import { render } from "react-dom";
+import { StrictMode } from "react/cjs/react.production.min";
 import SearchParams from "./SearchParams";
 
 const App = () => {
   return (
-    <div>
+    <StrictMode>
+      <div>
       <h1>Adopt Me!</h1>
       <SearchParams />
     </div>
+    </StrictMode>
   );
 };
 
